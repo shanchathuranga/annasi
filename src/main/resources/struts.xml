@@ -7,10 +7,17 @@
 	<constant name="struts.custom.i18n.resources" value="package" />
 	
 	<package name="/" extends="struts-default">
-		<action name="login" class="com.annasi.action.UserAuthenticationAction" method="login">
-			<result name="success">/index.jsp</result>
+		<action name="welcome" class="com.annasi.action.WelcomeAction" method="execute">
+			<result name="success">/home.jsp</result>
+			<result name="login">/login.jsp</result>
+		</action>
+		<action name="login" class="com.annasi.action.LoginAction" method="login">
+			<result name="success">/home.jsp</result>
 			<result name="login">/login.jsp</result>
 			<result name="input">/login.jsp</result>
+		</action>
+		<action name="logout" class="com.annasi.action.LogoutAction" method="logout">
+			<result name="success">/login.jsp</result>
 		</action>
 	</package>
 </struts>

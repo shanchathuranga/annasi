@@ -1,5 +1,7 @@
 <html>
+<head>
+<META HTTP-EQUIV="Refresh" CONTENT="1;URL=welcome.action">
+</head>
 <body>
-<h2>Hello World!</h2>
 </body>
 </html>
