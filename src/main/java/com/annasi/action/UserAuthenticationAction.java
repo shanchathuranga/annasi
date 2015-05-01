@@ -29,6 +29,7 @@ public class UserAuthenticationAction extends ActionSupport {
 	}
 	
 	public String login() {
+		System.out.println("Called");
 		if ( authenticate() ) {
 			return SUCCESS;
 		}
